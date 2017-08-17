@@ -11,11 +11,11 @@ function setGrid () {
   let container = document.getElementById("container")
   for(let i = 0; i < 2640; i++) {
     let cube = document.createElement("div");
-    cube.style.height = "10px"
-    cube.style.width = "10px"
-    cube.style.border = "1px solid black"
-    cube.style.cssFloat = "left"
-    cube.style.display = "inline-block"
+    cube.style.height = "10px";
+    cube.style.width = "10px";
+    cube.style.border = "1px solid black";
+    cube.style.cssFloat = "left";
+    cube.style.display = "inline-block";
     cube.addEventListener("click", handleCubeColor)
     cube.addEventListener("mouseenter", handleCubePaint)
     container.appendChild(cube);
@@ -31,12 +31,12 @@ function setPalet () {
   for (let j = 0; j < colors.length; j++) {
     const select =  document.createElement("div")
     select.style.backgroundColor=colors[j]
-    select.style.margin = "26px"
-    select.style.height = "50px"
-    select.style.width= "50px"
-    select.style.display= "inline-block"
-    select.style.border = "5px solid black"
-    select.style.borderRadius="30%"
+    select.style.margin = "26px";
+    select.style.height = "50px";
+    select.style.width= "50px";
+    select.style.display= "inline-block";
+    select.style.border = "5px solid black";
+    select.style.borderRadius="30%";
     select.addEventListener("click", colorSelect)
     divPalet.appendChild(select)
   }
